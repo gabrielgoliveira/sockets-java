@@ -1,4 +1,3 @@
-import java.io.*;
 import java.net.*;
 
 class UDPServer {
@@ -42,7 +41,7 @@ class UDPServer {
         serverSocket.close();
       }
     } catch (BindException e) {
-      System.out.println("Erro: Porta já em uso");
+      System.out.println(e.getMessage());
     }
     
   }

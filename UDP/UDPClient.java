@@ -41,7 +41,7 @@ class UDPClient {
     } catch (UnknownHostException e) {
         System.out.println("Host não encontrado");
     } catch (IOException e) {
-        System.out.println("ConnectionRefused");
+        System.out.println(e.getMessage());
     }
      
   } 
