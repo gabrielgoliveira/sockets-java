@@ -39,6 +39,7 @@ class UDPServer {
 
         serverSocket.send(sendPacket);
         System.out.println("OK\n");
+        serverSocket.close();
       }
     } catch (BindException e) {
       System.out.println("Erro: Porta já em uso");

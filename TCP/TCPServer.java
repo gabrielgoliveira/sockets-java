@@ -30,6 +30,8 @@ class TCPServer {
 
         // enviar a resposta
         outToClient.writeBytes(capitalizedSentence); 
+
+        welcomeSocket.close();
       } 
     } catch(BindException e) {
       // não é possivel "pegar" a porta solicitada
